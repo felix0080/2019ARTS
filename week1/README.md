@@ -81,3 +81,16 @@ func Thread()  {
    <-d
 }
 ```
+# Review
+https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
+
+  1. sandeep 说的很明确，在生产环境中，我们要尽量使用ingress为service做负载均衡及公开服务，因为nodeport具有端口数量限制，端口使用不充分，IP不稳定的因素，负载均衡有ip开销限制，kube-proxy需要使用有身份的用户输入kubectl命令，故首推ingress。
+  2. 但是我有个自己的看法
+    1. ingress是L7的，并且在路由查询上会消耗时间，对QPS要求高的应用可能会延迟10ms以上，
+    2. 还有这是多个应用共用的，虽然可以做负载均衡，但service流量过大难免会影响其他的service，多租户可能需要特定的ingress插件支持了
+# Tip
+  1. 如果发现笔记本空间不足，我们可以购买一个移动硬盘，现在我用的很舒服
+  2. 不会的尽量自己解决
+# Share
+  1. [kubernetes 最佳实践](https://medium.com/google-cloud/kubernetes-best-practices-season-one-11119aee1d10)
+  2. [istio-autoscaling](https://medium.com/google-cloud/kubernetes-autoscaling-with-istio-metrics-76442253a45a)
