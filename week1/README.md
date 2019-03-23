@@ -82,7 +82,7 @@ func Thread()  {
 }
 ```
 # Review
-https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
+[kubernetes-nodeport-vs-loadbalancer-vs-ingress](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
 
   1. sandeep 说的很明确，在生产环境中，我们要尽量使用ingress为service做负载均衡及公开服务，因为nodeport具有端口数量限制，端口使用不充分，IP不稳定的因素，负载均衡有ip开销限制，kube-proxy需要使用有身份的用户输入kubectl命令，故首推ingress。
   2. 但是我有个自己的看法
