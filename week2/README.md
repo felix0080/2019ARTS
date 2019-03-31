@@ -71,3 +71,6 @@ func candies(n int, m int) int {
   1. vi /etc/fstab
   2. 注释掉swap
   3. 重启
+
+# Share
+  1. [kubernetes-dns](https://medium.com/kubernetes-tutorials/kubernetes-dns-for-services-and-pods-664804211501)
