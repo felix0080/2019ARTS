@@ -45,7 +45,11 @@ func candies(n int, m int) int {
     return m-m%n
 }
 ```
-
+# Review
+  [kubernetes-flat-nat-less-networking](https://medium.com/devopslinks/kubernetes-flat-nat-less-networking-4c12dc4ca78a)
+  1. 文章讲述了kubernetes实现无nat扁平化的pod-pod,pod-node,node-pod通信实现的L3实现方式，是通过brige ，和 CNI,veth-pair,使得container->birge->nodes net dev->other node,言简意赅
+  2. 文章也提到了这种方式并不是最佳实践，需要SDN,和结合lstio服务来实现，之后文章会继续叙述相关内容
+  3. 总的来说还不错，不过讲的不深入
 # Tip
 ### VMware下虚拟机 host 网络模式连接外网的方法
   1. 将宿主机网络共享给host网络
