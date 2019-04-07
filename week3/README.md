@@ -1,3 +1,58 @@
+# Algorithm
+  1. Find the smallest round number that is not less than a given value.
+    Example
+    For value = 122, the output should be
+    nearestRoundNumber(value) = 130.
+  ```golang
+  func nearestRoundNumber(value int) int {
+    mod:=value % 10
+    if mod==0 {
+      return value
+    }
+    return value+10-mod
+  }
+  ```
+  2. When migrating data from a source storage system to a target storage system, the number one focus is avoiding data corruption at all cost. In order to meet these high standards, various rounds of tests are run checking for corrupted blocks as well as successfully migrated lengthy regions.  
+  We are going to represent the source storage system and target storage system as sequential arrays sourceArray and destinationArray respectively, where sourceArray[i] represents binary data of the ith source block as an integer, and destinationArray[i] represents binary data of the ith destination block, where the data should be migrated, also as an integer. Given the content of the source and the migrated content of the target, find the length and the starting block of the longest uncorrupted data segment (segment = subsequent blocks).
+  If there is no uncorrupted segment, return an array containing 0 and 0 respectively.
+  ```golang
+  func longestUncorruptedSegment(sourceArray []int, destinationArray []int) []int {
+    lenght := len(sourceArray)
+    laststart:=0
+    start:=0
+    lastsum:=0
+    sum:=0
+    isStop:=false
+    for i := 0 ; i < lenght ; i++ {
+      if sourceArray[i] == destinationArray[i]{
+        if isStop {
+          sum = 0
+          isStop=!isStop
+          start = i
+        }
+        sum++
+      }else {
+        if isStop {
+          continue
+        }else{
+          isStop=!isStop
+          if sum>lastsum {
+            lastsum = sum
+            laststart = start
+          }
+        }
+      }
+
+    }
+    if sum>lastsum {
+      lastsum = sum
+      laststart = start
+    }
+    return []int{
+      lastsum,laststart,
+    }
+  }
+  ```
 # Review
 [Helm package manager](https://medium.com/@gajus/the-missing-ci-cd-kubernetes-component-helm-package-manager-1fe002aac680)
   1. 文章讲述了helm的概念
