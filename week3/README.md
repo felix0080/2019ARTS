@@ -82,3 +82,6 @@
 ### VMware下虚拟机 添加新磁盘方法
   1. 先在VMware下创建一块新磁盘
   2. 启动虚拟机后 fdisk->n->1>w->reboot
+
+# Share
+1. [subcharts-and-global-values](https://github.com/helm/helm/blob/master/docs/chart_template_guide/subcharts_and_globals.md#subcharts-and-global-values)
