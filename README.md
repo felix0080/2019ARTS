@@ -4,5 +4,7 @@ when 2020 comes , I want to see me improve in computer
 
 # Progress
 1. week 1
+2. week 2
+3. week 3
 
 
