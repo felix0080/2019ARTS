@@ -45,7 +45,7 @@
 1. 使用HttpDNS 替代UDP dns，绕过本地dns服务器，防止解析不准确（大多使用于移动应用）
 
 # Share
-[choose kong rather than nginx](https://medium.com/arvind-internet/open-sourcing-tcp-plugin-for-kong-d89e9fb270c3)
-1. 选择kong 来做nginx集群管理，直接调用kong的接口
-[conf manager for nginx cluster](https://github.com/felix0080/subnginx)
-1. 正在开发，还未完成（直接使用nginx集群而不是kong,这个需求促使我写此应用，替代ansible）
+1. [choose kong rather than nginx](https://medium.com/arvind-internet/open-sourcing-tcp-plugin-for-kong-d89e9fb270c3)
+    选择kong 来做nginx集群管理，直接调用kong的接口
+2. [conf manager for nginx cluster](https://github.com/felix0080/subnginx)
+    正在开发，还未完成（直接使用nginx集群而不是kong,这个需求促使我写此应用，替代ansible）
