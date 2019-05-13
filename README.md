@@ -8,5 +8,6 @@ when 2020 comes , I want to see me improve in computer
 3. week 3
 4. week 4
 5. week 5
-
+6. week 6
+7. week 7
 
