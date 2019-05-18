@@ -3,11 +3,5 @@ What is 2019ARTS ? its mean from now on, I will write an article about computer 
 when 2020 comes , I want to see me improve in computer
 
 # Progress
-1. week 1
-2. week 2
-3. week 3
-4. week 4
-5. week 5
-6. week 6
-7. week 7
+1. week 8
 
