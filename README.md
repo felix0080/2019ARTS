@@ -5,3 +5,5 @@ when 2020 comes , I want to see me improve in computer
 # Progress
 1. week 8
 
+#ssh -i file user@ip
+

@@ -28,3 +28,12 @@
     ```
 
 # Review
+1. [locks-versus-channels-concurrent-go](https://opensource.com/article/18/7/locks-versus-channels-concurrent-go)
+	介绍了使用memory channel 分别有什么优势和劣势
+# Tip
+1. [Huawei and google](https://onezero.medium.com/the-huawei-disaster-reveals-googles-iron-grip-on-android-b1ccee34504d)
+    科技生产力的重要性
+
+# Share
+1. [locks-versus-channels-concurrent-go](https://opensource.com/article/18/7/locks-versus-channels-concurrent-go)
+2. [Huawei and google](https://onezero.medium.com/the-huawei-disaster-reveals-googles-iron-grip-on-android-b1ccee34504d)
