@@ -3,7 +3,6 @@ What is 2019ARTS ? its mean from now on, I will write an article about computer 
 when 2020 comes , I want to see me improve in computer
 
 # Progress
-1. week 8
+1. week 10
 
-#ssh -i file user@ip
 
