@@ -22,25 +22,64 @@
     输入: m = 7, n = 3
     输出: 28
     ```golang
-    func uniquePaths(m int, n int) int {
-	arr:=make([][]int,m,m)
-	for i := 0 ; i < m ; i++  {
-		arr[i]=make([]int,n,n)
-	}
-	for i := 0 ; i < m ; i++{
-		if i == 0 {
-			for j := 0; j < n; j++ {
-				arr[0][j]=1
-			}
-			continue
-		}
-		arr[i][0] = 1
-		for j := 1; j < n; j++ {
-			arr[i][j]=arr[i-1][j]+arr[i][j-1]
-		}
-	}
-	return arr[m-1][n-1]
-}
+        func uniquePaths(m int, n int) int {
+        arr:=make([][]int,m,m)
+        for i := 0 ; i < m ; i++  {
+            arr[i]=make([]int,n,n)
+        }
+        for i := 0 ; i < m ; i++{
+            if i == 0 {
+                for j := 0; j < n; j++ {
+                    arr[0][j]=1
+                }
+                continue
+            }
+            arr[i][0] = 1
+            for j := 1; j < n; j++ {
+                arr[i][j]=arr[i-1][j]+arr[i][j-1]
+            }
+        }
+        return arr[m-1][n-1]
+    }
+    ```
+2. 反转一个单链表。
+
+    示例:
+
+    输入: 1->2->3->4->5->NULL
+    输出: 5->4->3->2->1->NULL
+    进阶:
+    你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
+    ```golang
+        func reverseList(head *ListNode) *ListNode {
+            var left,right *ListNode
+            if head ==nil{
+                return nil
+            }
+            for {
+                right=head.Next
+                head.Next=left
+                if right == nil {
+                    return head
+                }
+                left=head
+                head=right
+                right=head.Next
+            }
+        }
+        func reverseList1(head *ListNode) *ListNode {
+            if head==nil {
+                return nil
+            }
+            next:=head.Next
+            head.Next=nil
+            if next == nil{
+                return head
+            }
+            list:=reverseList1(next)
+            next.Next=head
+            return list
+        }
     ```
 
 # Review
