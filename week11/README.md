@@ -84,13 +84,13 @@
 
 # Review
 
-  1. (go调度器)[https://povilasv.me/go-scheduler/]
+  1. [go调度器](https://povilasv.me/go-scheduler/)
   本文简单介绍了GO调度器的机制
   ![协程调度周期](https://povilasv.me/wp-content/uploads/2017/04/go-sched-Page-1-768x495.png)
   详细介绍了当前M执行完后的窃取机制
     补充
-      (netpoller，网路和系统调用调度行为的区别)[https://morsmachine.dk/netpoller]
-      使用go tool trace 分析调度行为 (go tool trace)[https://www.ardanlabs.com/blog/2015/02/scheduler-tracing-in-go.html]
+      [netpoller，网路和系统调用调度行为的区别](https://morsmachine.dk/netpoller)
+      使用go tool trace 分析调度行为 [go tool trace](https://www.ardanlabs.com/blog/2015/02/scheduler-tracing-in-go.html)
   讲的不错，值得观赏。
 
 # Tip
@@ -99,7 +99,7 @@
 
 # Share
 
-   (go调度器)[https://povilasv.me/go-scheduler/]
-   (netpoller，网路和系统调用调度行为的区别)[https://morsmachine.dk/netpoller]
-   (go tool trace)[https://www.ardanlabs.com/blog/2015/02/scheduler-tracing-in-go.html]
+   [go调度器](https://povilasv.me/go-scheduler/)
+   [netpoller，网路和系统调用调度行为的区别](https://morsmachine.dk/netpoller)
+   [go tool trace](https://www.ardanlabs.com/blog/2015/02/scheduler-tracing-in-go.html)
   
