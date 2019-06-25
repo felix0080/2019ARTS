@@ -63,11 +63,12 @@
     }
     ```
 # Review
-1. [go并发]( https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html)
-    简单介绍了，什么时候适合用多核并发来提升性能，什么时候多核并发非但提升不了性能，反而增加运行时长，什么时候单核多协程能提升性能
+1.  [go并发]( https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html)
+
+    介绍了，什么时候适合用多核并发来提升性能，什么时候多核并发非但提升不了性能，反而增加运行时长，什么时候单核多协程能提升性能
     什么时候多核多协程也提升不了性能
     介绍了两种类型的并发，IO-Bound,CPU-Bound.以及各自的并发机制，针对每种型也举了例子
-    讲的很好
+讲的很好
 
 # Tip
 1. 使用 litmus 来测试
